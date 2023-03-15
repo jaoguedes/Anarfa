@@ -1,0 +1,338 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    background-color: #ced4da;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    height: 110px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+#logo {
+    height: 80px;
+    padding: 15px 30px;
+}
+@font-face {
+    font-family: 'Arkitech Medium';
+    src: url(../fonts/Arkitech\ Medium.ttf) format('truetype');
+}
+header nav {
+    align-self: flex-end;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 13px;
+    padding: 0px 15px;
+    color: yellow;
+    font-family: 'Arkitech Medium';
+}
+nav a:hover{
+    color: #e8671f;
+}
+#img-home{
+    height: 500px;
+    background-image: url(../img/img-home.jpg);
+    background-size: cover;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 150px 80px;
+}
+#call-to-action {
+    background-color: #000;
+    opacity: 0.7;
+    color: #ffde59;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px 40px;
+    border-radius: 10px;
+}
+#solicete-orcamento {
+    background-color: #b54d16;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fbe27e;
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px auto 40px auto;
+}
+#solicete-orcamento:hover {
+    background-color: #ffde59;
+    color: #e8671f;
+}
+#container {
+    padding: 0px 100px;
+    text-align: center;
+    max-width: 1900px;
+    margin: 0px auto;
+}
+#container p {
+    color: #555;
+}
+h1 {
+    padding: 45px 0 20px 0;
+    font-family: 'Arkitech Medium';
+    font-size: 26px;
+}
+#destaque-servico {
+    display: flex;
+    margin: 60px 0px;
+    justify-content: space-between;
+}
+.box-servico {
+    background-color: white;
+    border: 1px solid lightslategray;
+    margin: 0 15px;
+    border-radius: 10px;
+}
+.box-servico img {
+    height: 180px;
+}
+.box-servico h2, p, a {
+    padding: 0 20px;
+}
+.box-servico h2{
+    background-color: lightslategray;
+    font-size: 25px;
+    color: white;
+    padding: 15px 20px;
+    text-shadow: 1px 1px 2px black;
+}
+.box-servico a {
+    text-decoration: none;
+    font-weight: bold;
+    color: lightslategray;
+}
+.box-servico:hover a {
+    color: #e8671f;
+}
+.box-servico:hover h2 {
+    background-color: #e8671f;
+}
+footer span {
+    font-family: 'Arkitech Medium';
+    font-size: 15px;
+    color: #ffde59;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    height: 100px;
+}
+
+/* fim da index */
+/* começo da pagina sobre */
+
+#img-interna {
+    background-image: url(../img/img-home.jpg);
+    background-size: cover;
+    padding: 30px 0px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+#img-interna-header span {
+    font-family: 'Arkitech Medium';
+    font-size: 26px;
+    color: #ffde59;
+}
+#conteudo-empresa {
+    display: flex;
+    margin: 30px auto;
+}
+#video-empresa {
+    width: 50%;
+    padding: 33px 0 20px 0;
+    margin-right: 30px;
+}
+#info-empresa {
+    width: 50%;
+    margin-left: 30px;
+}
+#video-empresa video {
+    max-width: 100%;
+    border-radius: 10px;
+}
+#info-empresa p, li {
+    color: #555;
+    text-align: justify;
+}
+h3 {
+    color: #e8671f;
+    font-size: 24px;
+}
+/* fim do sobre */
+/* começo do contato */
+
+#contato-conteudo {
+    display: flex;
+    padding: 45px 0;
+}
+#dados-contato {
+    width: 50%;
+}
+#mapa{
+    width: 50%;
+    margin-left: 30px;
+}
+#frm-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+}
+#frm-contato input, textarea {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    margin: 5px 0;
+    border-radius: 10px;
+    border: solid 1px lightslategray;
+    padding: 5px 10px;
+}
+textarea {
+    resize: none;
+}
+button {
+    margin: 25px 15px 0 15px;
+    padding: 8px 40px;
+    border-radius: 10px;
+    border: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+#botao-enviar {
+    background-color: green;
+    color: white;
+}
+#botao-apagar {
+    background-color: #c4c4c4;
+    color: #555;
+}
+/* controle da responsividade do site */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 20px;
+
+    }
+    header {
+        flex-direction: column;
+        height: 400px;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0 auto 15px auto;
+    }
+    #img-home {
+        min-height: 300px;
+        padding: 30px 0;
+    }
+    #call-to-action {
+        padding: 15px 15px;
+        font-size: 25px;
+        margin: 15px 15px;
+    }
+    header nav a {
+        padding: 15px 0;
+        font-size: 17px;
+    }
+    #solicete-orcamento {
+        margin: 15px 15px;
+        font-size: 25px;
+        text-align: center;
+    }
+    #container {
+        max-width: 100vw;
+        padding: 0 10px;
+    }
+    #destaque-servico {
+        flex-direction: column;
+        max-height: 1700px;
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .box-servico {
+        margin: 30px 0;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    .box-servico img {
+        height: 100px;
+        padding-top: 10px;
+    }
+    .box-servico h2 {
+        margin: 10px 0;
+    }
+    #img-interna-header{
+       font-size: 20px; 
+    }
+    #conteudo-empresa {
+        flex-direction: column-reverse;
+    }
+    #video-empresa {
+        width: 95%;
+        margin: 0;
+        padding: 10px 10px;
+    }
+    #info-empresa {
+        width: 95%;
+        margin: 0;
+        padding: 10px 10px;
+    }
+    #info-empresa p {
+        text-align: center;
+    }
+    #info-empresa li {
+        text-align: left;
+    }
+    #img-interna-header span {
+        font-size: 20px;
+    }
+    #contato-conteudo {
+        flex-direction: column;
+    }
+    #dados-contatos {
+        width: 95%;
+        margin: 0;
+        padding: 10px 10px;
+    }
+    #dados-contatos p {
+        text-align: center;
+    }
+    #mapa {
+        width: 95%;
+        margin: 0;
+        padding: 10px 10px;
+    }
+    #frm-contato input, textarea {
+        font-size: 23px;
+    }
+    button {
+        font-size: 25px;
+        width: 200px;
+        height: 70px;
+    }
+    #frame-mapa {
+        margin: 30px 0;
+        min-width: 250px;
+    }
+}
